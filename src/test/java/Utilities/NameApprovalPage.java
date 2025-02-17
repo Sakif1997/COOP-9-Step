@@ -38,6 +38,6 @@ public class NameApprovalPage extends Methods{
 		//WaitElementVisible(ProfileIcon_w);
 		clickWaitElement(ProfileIcon_w);
 		Thread.sleep(1500);
-		clickWaitElement(logout);
+		//clickWaitElement(logout);
 	}
 }

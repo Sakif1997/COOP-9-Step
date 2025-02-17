@@ -27,6 +27,7 @@ public class SamityDocumentPage9 extends Methods {
     UploadMethod up = new UploadMethod();
     public void DocumentAttachments() throws InterruptedException, AWTException {
         //সাংগঠনিক সভার রেজুলেশন
+        Thread.sleep(2000);
         DropDownSelectByVisibleText(DocumentType_s,"সাংগঠনিক সভার রেজুলেশন");
         FieldValue(DocumentReferrence_in,"112233445566");
         FieldValue(MeyadStart_in,"22012024");

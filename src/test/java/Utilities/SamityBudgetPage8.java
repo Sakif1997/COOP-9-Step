@@ -50,7 +50,7 @@ public class SamityBudgetPage8 extends Methods{
     //ভাড়া এবং কর(40101043)
     public By KhorochInputMoney22_in  = By.xpath("/html[1]/body[1]/div[1]/main[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/div[2]/div[2]/div[1]/table[1]/tbody[1]/tr[2]/td[3]/div[1]/div[1]/input[1] | /html[1]/body[1]/div[1]/main[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[2]/div[2]/div[2]/div[1]/table[1]/tbody[1]/tr[2]/td[3]/div[1]/div[1]/input[1]");
     //"৫০০০"
-    public By canceloptions22_c = By.xpath("/html[1]/body[1]/div[1]/main[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/div[2]/div[2]/div[1]/table[1]/tbody[1]/tr[3]/td[4]/button[1] | /html[1]/body[1]/div[1]/main[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[2]/div[2]/div[2]/div[1]/table[1]/tbody[1]/tr[3]/td[4]/button[1]/*[name()='svg'][1]");
+    public By canceloptions22_c = By.xpath("/html[1]/body[1]/div[1]/main[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/div[2]/div[2]/div[1]/table[1]/tbody[1]/tr[3]/td[4]/button[1] | /html[1]/body[1]/div[1]/main[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[2]/div[2]/div[2]/div[1]/table[1]/tbody[1]/tr[3]/td[4]/button[1]/*[name()='svg'][1]| //tbody/tr[3]/td[4]/button[1]");
 
     public By SaveToNextPage_c = By.xpath("//button[@aria-label='সংরক্ষন করুন']");
     public By NextPage_w = By.xpath("//p[@class='MuiTypography-root MuiTypography-body1 css-8knn9q']");
@@ -62,7 +62,7 @@ public class SamityBudgetPage8 extends Methods{
         //Thread.sleep(2000);
         KeybordInputSelectOption(joma2,"মেয়াদী জমা(20301027)");
         FieldValue(InputMoney2_in,"২০০০");
-        for(int i=0; i<=7; i++){
+        for(int i=0; i<=6; i++){
             clickElement(canceloptions1_c);
             Thread.sleep(1000);
         }
@@ -71,7 +71,7 @@ public class SamityBudgetPage8 extends Methods{
         //Thread.sleep(2000);
         KeybordInputSelectOption(Khoroch2_in_enter,"ভাড়া এবং কর(40101043)");
         FieldValue(KhorochInputMoney2_in,"২০০০");
-        for(int i=0; i<=7; i++){
+        for(int i=0; i<=6; i++){
             clickElement(canceloptions2_c);
             Thread.sleep(1000);
         }
@@ -84,16 +84,20 @@ public class SamityBudgetPage8 extends Methods{
         //Thread.sleep(2000);
         KeybordInputSelectOption(joma22,"মেয়াদী জমা(20301027)");
         FieldValue(InputMoney22_in,"২০০০");
-        for(int i=0; i<=7; i++){
+        for(int i=0; i<=6; i++){
             clickElement(canceloptions11_c);
             Thread.sleep(1000);
         }
+        //ScrollDown();
         KeybordInputSelectOption(khoroch11_in_enter,"এসবিপি ঋণ (10601015)");
         FieldValue(khorochInputMoney11_in,"২০০০");
         //Thread.sleep(2000);
+        //scrollToBottom();
         KeybordInputSelectOption(Khoroch22_in_enter,"ভাড়া এবং কর(40101043)");
         FieldValue(KhorochInputMoney22_in,"২০০০");
-        for(int i=0; i<=7; i++){
+        scrollDownByPageElem(canceloptions22_c);
+        //ScrollDownByPageElem(canceloptions22_c);
+        for(int i=0; i<=6; i++){
             clickElement(canceloptions22_c);
             Thread.sleep(1000);
         }

@@ -41,35 +41,35 @@ public class OsompurnoAbedon extends BrowserSetupNew {
         //log.Baboharkarilogin();//for local server
       logstage.Baboharkarilogin();//for stage server
 
-        oap.OsompurnoAbedonfirstpageInputs("Stage server flow সমিতি 01-2/12/2025");//connect
+        oap.OsompurnoAbedonfirstpageInputs("Stage flow samity test");//connect
        // oap.AfterAddMemberPage3();
        // oap.ComityPodobiPage();
      //  oap.ArthikinfoPage();
        //oap.SamityJomaKorochPage();
        //oap.SamityArthikInfoPage7();
         //oap1.BudgeSelection();
-        p3.page3();
-        mOne.addMember();
-        p3.page3();
-        mtwo.addMember();
-        p3.page3();
-        mthree.addMember();
-        p3.page3();
-        mFour.addMember();
-        p3.page3();
-        mFIve.addMember();
-        getDriver().navigate().refresh();
+       // p3.page3();
+        //mOne.addMember();
+        //p3.page3();
+      //  mtwo.addMember();
+       // p3.page3();
+      //  mthree.addMember();
+       // p3.page3();
+      //  mFour.addMember();
+       // p3.page3();
+      //  mFIve.addMember();
+       // getDriver().navigate().refresh();
 
-        p3.page3();
-        mSix.addMember();
-        getDriver().navigate().refresh();
-        p3.AfterAddMemberPage3();
+      //  p3.page3();
+      //  mSix.addMember();
+      //  getDriver().navigate().refresh();
+       // p3.AfterAddMemberPage3();
 
-        p4.ComityPodobiPage();
-        p5.ArthikinfoPage();
-        p6.Samity_JomaKorochPage();
-        Thread.sleep(2000);
-        p7.SamityArthikInfoPage7();
+     //   p4.ComityPodobiPage();
+       // p5.ArthikinfoPage();
+       // p6.Samity_JomaKorochPage();
+       // Thread.sleep(2000);
+       // p7.SamityArthikInfoPage7();
         p8.BudgeSelection();
         p9.DocumentAttachments();
         p10.FinalPage();

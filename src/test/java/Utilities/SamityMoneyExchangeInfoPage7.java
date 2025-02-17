@@ -33,7 +33,7 @@ public class SamityMoneyExchangeInfoPage7 extends Methods{
         Thread.sleep(2000);
         KeybordInputSelectOption(joma2,"মেয়াদী জমা(20301027)");
         FieldValue(InputMoney2_in,"২০০০");
-        for(int i=0; i<=7; i++){
+        for(int i=0; i<=6; i++){
             clickElement(canceloptions1_c);
             Thread.sleep(1500);
         }
@@ -42,7 +42,7 @@ public class SamityMoneyExchangeInfoPage7 extends Methods{
         Thread.sleep(2000);
         KeybordInputSelectOption(Khoroch2_in_enter,"ভাড়া এবং কর(40101043)");
         FieldValue(KhorochInputMoney2_in,"২০০০");
-        for(int i=0; i<=7; i++){
+        for(int i=0; i<=6; i++){
             clickElement(canceloptions2_c);
             Thread.sleep(1500);
         }

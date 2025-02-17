@@ -62,7 +62,7 @@ public class StageServerNineStepMemberCreation extends BrowserSetupNew {
     public void UpToAddMember() throws  InterruptedException, IOException, AWTException {
         log.Baboharkarilogin();
         //Enter Name Every time
-        p1.firstpageInputs("Stage server flow সমিতি 006-2/12/2025");
+        p1.firstpageInputs("Stage flow samity test 003");
         Thread.sleep(2000);
         UpPage2.Page2();
         //Thread.sleep(2000);
